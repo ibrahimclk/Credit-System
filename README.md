@@ -39,4 +39,4 @@ http://localhost:8080/swagger-ui.html
 
 ![image](https://user-images.githubusercontent.com/34608780/155898490-9b475055-5df3-4361-9d6f-27a40299d324.png)
 
-Credit score is determined by the last digit of the ID number.
+Credit score is determined by the last digit of the identity number.

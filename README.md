@@ -1,7 +1,7 @@
 # Paycore Java Spring Bootcamp Project
 Credit Application System with Spring 
 
-##Used Technologies
+## Used Technologies
 
 Java 8
 
@@ -21,7 +21,7 @@ Mockito
 
 Maven
 
-##Run
+## Run
 
 Port: 8080
 
@@ -33,7 +33,7 @@ $ mvn clean install
 
 $ mvn spring-boot:run
 
-##Swagger Ui
+## Swagger Ui
 
 http://localhost:8080/swagger-ui.html
 

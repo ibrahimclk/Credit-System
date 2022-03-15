@@ -25,7 +25,7 @@ Maven
 
 Port: 8080
 
-git clone https://github.com/nejlasahin/credit-application-system.git
+git clone https://github.com/ibrahimclk/Credit-System.git
 
 $ cd Credit-System
 

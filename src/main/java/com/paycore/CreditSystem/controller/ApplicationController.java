@@ -21,20 +21,20 @@ import java.util.stream.Collectors;
 public class ApplicationController {
 
     private final ApplicationService applicationService;
-    private static final ApplicationMapper APPLICATION_MAPPER = Mappers.getMapper(ApplicationMapper.class);
+    private final ApplicationMapper applicationMapper;
 
     @ApiOperation(value = "Get all applications")
     @GetMapping(value = "/all")
     public List<ApplicationDTO> getAllApplications(){
         List<Application> allApplications = applicationService.getAllApplications();
-        return allApplications.stream().map(APPLICATION_MAPPER::toDto).collect(Collectors.toList());
+        return applicationMapper.toDtos(allApplications);
 
     }
 
     @ApiOperation(value = "Get application by id")
     @GetMapping("/get/{identityno}")
     public ApplicationDTO getStatus(@PathVariable("identityno") String identityno) {
-        return APPLICATION_MAPPER.toDto(applicationService.getStatus(identityno));
+        return applicationMapper.toDto(applicationService.getStatus(identityno));
     }
 
 
